@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   font-family: "Roboto Mono", monospace;
   color: white;
+  overflow-x: hidden;
 }
 
 /* Typography
@@ -30,7 +31,7 @@ h6 {
   font-weight: 300;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
 }
@@ -63,7 +64,7 @@ h6 {
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 {
-    font-size: 11rem;
+    font-size: 13rem;
   }
   h2 {
     font-size: 7rem;
@@ -99,6 +100,36 @@ p {
   border-bottom: 170vh solid $red;
 }
 
+@media only screen and (max-width: 850px) {
+  .arrow-up {
+    position: absolute;
+    top: -10vh;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 30vh solid transparent;
+    border-right: 0vh solid transparent;
+    border-bottom: 170vh solid $red;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .arrow-up {
+    position: absolute;
+    top: -10vh;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 10vh solid transparent;
+    border-right: 0vh solid transparent;
+    border-bottom: 170vh solid $red;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
 section {
   height: 80vh;
   width: 100vw;
@@ -109,6 +140,9 @@ section {
   color: white;
   text-shadow: 1rem 1rem 0px $red, 2px -27px 2px rgba(206, 89, 55, 0);
   font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #header-headline {
@@ -116,6 +150,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  #header-headline {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #quote {
@@ -132,9 +177,34 @@ section {
   margin-bottom: 5vh;
 }
 
+@media only screen and (max-width: 850px) {
+  #quote-header {
+    height: 100%;
+    color: $red;
+    width: 60vw;
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #quote-header {
+    height: 100%;
+    color: $red;
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
+}
+
 #quote-text {
   color: $green;
   width: 50vw;
+}
+
+@media only screen and (max-width: 450px) {
+  #quote-text {
+    color: $green;
+    width: 70vw;
+  }
 }
 
 #process {
@@ -150,19 +220,19 @@ section {
 }
 
 #portfolio-options {
-  height: 500px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 5%;
+  grid-gap: 5%;
 }
 
 .portfolio-options-boxes {
   background-color: white;
-  height: 100%;
+  height: 50vh;
 }
 
 #team {
   height: 100%;
+  background-color: white;
 }
 #team-header {
   color: $green;
@@ -170,13 +240,14 @@ section {
 
 #team-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+  grid-gap: 5%;
 }
 
 .team-member {
   margin: auto;
-  width: 200px;
-  height: 200px;
+  height: 30vh;
+  width: 30vh;
   background: $red;
   border-radius: 50%;
 }
