@@ -103,6 +103,7 @@ p {
   border-left: 50vh solid transparent;
   border-right: 0vh solid transparent;
   border-bottom: 190vh solid #eb5472;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 850px) {
@@ -115,6 +116,7 @@ p {
     border-left: 30vh solid transparent;
     border-right: 0vh solid transparent;
     border-bottom: 190vh solid #eb5472;
+    z-index: 1;
   }
 }
 
@@ -128,6 +130,7 @@ p {
     border-left: 10vh solid transparent;
     border-right: 0vh solid transparent;
     border-bottom: 190vh solid #eb5472;
+    z-index: 1;
   }
 }
 
