@@ -8,6 +8,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -15,7 +16,6 @@ body {
   font-weight: 400;
   font-family: "Roboto Mono", monospace;
   color: white;
-  overflow-x: hidden;
 }
 
 /* Typography
@@ -97,7 +97,7 @@ p {
   height: 0;
   border-left: 50vh solid transparent;
   border-right: 0vh solid transparent;
-  border-bottom: 170vh solid $red;
+  border-bottom: 190vh solid $red;
 }
 
 @media only screen and (max-width: 850px) {
@@ -109,7 +109,7 @@ p {
     height: 0;
     border-left: 30vh solid transparent;
     border-right: 0vh solid transparent;
-    border-bottom: 170vh solid $red;
+    border-bottom: 190vh solid $red;
   }
 }
 
@@ -122,7 +122,7 @@ p {
     height: 0;
     border-left: 10vh solid transparent;
     border-right: 0vh solid transparent;
-    border-bottom: 170vh solid $red;
+    border-bottom: 190vh solid $red;
   }
 }
 
@@ -131,7 +131,7 @@ p {
 }
 
 section {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -164,6 +164,8 @@ section {
 }
 
 #quote {
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
@@ -198,6 +200,8 @@ section {
 #quote-text {
   color: $green;
   width: 50vw;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 450px) {
@@ -227,11 +231,10 @@ section {
 
 .portfolio-options-boxes {
   background-color: white;
-  height: 50vh;
+  height: 40vh;
 }
 
 #team {
-  height: 100%;
   background-color: white;
 }
 #team-header {
@@ -240,14 +243,74 @@ section {
 
 #team-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
   grid-gap: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .team-member {
   margin: auto;
-  height: 30vh;
-  width: 30vh;
+  height: 25vh;
+  width: 25vh;
   background: $red;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: cell;
+}
+
+.team-member:hover .text {
+  opacity: 1;
+}
+
+.team-member:hover {
+  opacity: 0.5;
+}
+
+.text {
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.text {
+  background-color: $green;
+  color: $red;
+  font-size: 2rem;
+  padding: 16px 32px;
+}
+@media only screen and (max-width: 450px) {
+  .team-member {
+    margin: auto;
+    height: 10vh;
+    width: 10vh;
+    background: $red;
+    border-radius: 50%;
+  }
+}
+
+.jan {
+  background-image: url(/assets/jan.png);
+  background-size: cover;
+}
+
+.till {
+  background-image: url(/assets/till.png);
+  background-size: cover;
+}
+
+.martin {
+  background-image: url(/assets/martin.png);
+  background-size: cover;
+}
+
+.catharina {
+  background-image: url(/assets/catharina.png);
+  background-size: cover;
+}
+
+.philipp {
+  background-image: url(/assets/philipp.png);
+  background-size: cover;
 }
