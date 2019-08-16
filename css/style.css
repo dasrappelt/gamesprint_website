@@ -149,11 +149,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #header-headline {
@@ -162,11 +162,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -178,11 +178,11 @@ section {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -191,8 +191,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -231,8 +231,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 450px) {
@@ -257,8 +257,8 @@ section {
 #portfolio-options {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 5%;
 }
 
@@ -278,8 +278,8 @@ section {
 #team-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25vh, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
+  -ms-grid-columns: (minmax(25vh, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
   grid-gap: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -295,11 +295,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: cell;
 }
 
@@ -335,27 +335,27 @@ section {
 }
 
 .jan {
-  background-image: url(/assets/jan.png);
+  background-image: url(../assets/jan.png);
   background-size: cover;
 }
 
 .till {
-  background-image: url(/assets/till.png);
+  background-image: url(../assets/till.png);
   background-size: cover;
 }
 
 .martin {
-  background-image: url(/assets/martin.png);
+  background-image: url(../assets/martin.png);
   background-size: cover;
 }
 
 .catharina {
-  background-image: url(/assets/catharina.png);
+  background-image: url(../assets/catharina.png);
   background-size: cover;
 }
 
 .philipp {
-  background-image: url(/assets/philipp.png);
+  background-image: url(../assets/philipp.png);
   background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
