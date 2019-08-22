@@ -548,6 +548,7 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .line-div-eight {
@@ -619,6 +620,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5%;
     height: 70vh;
+    margin: 0;
   }
 }
 
